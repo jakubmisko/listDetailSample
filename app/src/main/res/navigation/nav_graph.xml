@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/usersListFragment">
+
+    <fragment
+        android:id="@+id/usersListFragment"
+        android:name="sk.goodreq.ui.list.UsersListFragment"
+        android:label="Users list"
+        tools:layout="@layout/fragment_users_list" >
+        <action
+            android:id="@+id/action_usersListFragment_to_userDetailFragment"
+            app:destination="@id/userDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userDetailFragment"
+        android:name="sk.goodreq.ui.detail.UserDetailFragment"
+        android:label="User's detail"
+        tools:layout="@layout/fragment_user_detail">
+        <argument
+            android:name="userId"
+            app:nullable="false"
+            app:argType="java.lang.Long"/>
+
+    </fragment>
+
+</navigation>

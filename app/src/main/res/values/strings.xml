@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">goodreq</string>
+    <string name="user_avatar_desc">User\'s avatar</string>
+    <string name="e_mail_logo">e-mail logo</string>
+    <string name="retry">Retry</string>
+    <string name="refresh">Refresh</string>
+</resources>
